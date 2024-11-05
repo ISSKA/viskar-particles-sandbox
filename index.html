@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/viskar-particles-sandbox/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VISKAR contaminant design demo</title>
+    <script type="module" crossorigin src="/viskar-particles-sandbox/assets/index-CJSOoKM6.js"></script>
+    <link rel="stylesheet" crossorigin href="/viskar-particles-sandbox/assets/index-B2Ne6wH0.css">
+  </head>
+  <body>
+    <div id="threejs-container"></div>
+    <div id="ui">
+      <h1>VISKAR contaminant design demo</h1>
+      <label for="baseSize">Base size</label>
+      <input
+        oninput="updateBaseSize(this)"
+        type="range"
+        min="100"
+        max="900"
+        step="1"
+        value="500"
+        id="baseSize"
+      />
+      <br />
+      <br />
+      <label for="shape">Shape</label>
+      <input
+        oninput="updateShape(this)"
+        type="radio"
+        name="shape"
+        id="shape-circular"
+        value="Circular"
+        checked
+      />
+      <input
+        oninput="updateShape(this)"
+        type="radio"
+        name="shape"
+        id="shape-angular"
+        value="Angular"
+      />
+      <input
+        oninput="updateShape(this)"
+        type="radio"
+        name="shape"
+        id="shape-clouds"
+        value="Clouds"
+      />
+      <input
+        oninput="updateShape(this)"
+        type="radio"
+        name="shape"
+        id="shape-abstract"
+        value="Abstract"
+      />
+      <br />
+      <label for="shapeRandSize">Randomize size</label>
+      <input
+        oninput="updateShapeRandSize(this)"
+        type="range"
+        min="0"
+        max="1"
+        step="0.01"
+        value="0"
+        id="shapeRandSize"
+      />
+      <br />
+      <label for="shapeRandProportions">Randomize proportions</label>
+      <input
+        oninput="updateShapeRandProportions(this)"
+        type="range"
+        min="0"
+        max="1"
+        step="0.01"
+        value="0"
+        id="shapeRandProportions"
+      />
+      <br />
+      <br />
+      <br />
+      <label for="color">Base color</label>
+      <input
+        oninput="updateColor(this)"
+        type="color"
+        value="#dddddd"
+        id="color"
+      />
+      <br />
+      <label for="colorRandH">Randomize hue</label>
+      <input
+        oninput="updateColorRandH(this)"
+        type="range"
+        min="0"
+        max="1"
+        step="0.01"
+        value="0"
+        id="colorRandH"
+      />
+      <br />
+      <label for="colorRandS">Randomize saturation</label>
+      <input
+        oninput="updateColorRandS(this)"
+        type="range"
+        min="0"
+        max="1"
+        step="0.01"
+        value="0"
+        id="colorRandS"
+      />
+      <br />
+      <label for="colorRandL">Randomize lightness</label>
+      <input
+        oninput="updateColorRandL(this)"
+        type="range"
+        min="0"
+        max="1"
+        step="0.01"
+        value="0"
+        id="colorRandL"
+      />
+      <br />
+      <br />
+      <label for="effectScaleOut">Scale out</label>
+      <input
+        oninput="updateEffectScaleOut(this)"
+        type="range"
+        min="0"
+        max="1"
+        step="0.01"
+        value="0.5"
+        id="effectScaleOut"
+      />
+      <br />
+      <label for="effectBeat">Beat</label>
+      <input
+        oninput="updateEffectBeat(this)"
+        type="range"
+        min="0"
+        max="1"
+        step="0.01"
+        value="0"
+        id="effectBeat"
+      />
+      <br />
+      <label for="effectSpread">Spread</label>
+      <input
+        oninput="updateEffectSpread(this)"
+        type="range"
+        min="0"
+        max="1"
+        step="0.01"
+        value="0"
+        id="effectSpread"
+      />
+      <br />
+    </div>
+  </body>
+</html>
