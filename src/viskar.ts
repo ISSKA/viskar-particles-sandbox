@@ -8,10 +8,10 @@ export enum ContaminantDesignShape {
 }
 
 export const ShapeToTexture: { [x in ContaminantDesignShape]: string } = {
-  Circular: "/textures/circle.png",
-  Angular: "/textures/angular.png",
-  Clouds: "/textures/clouds.png",
-  Abstract: "/textures/abstract.png",
+  Circular: "./textures/circle.png",
+  Angular: "./textures/angular.png",
+  Clouds: "./textures/clouds.png",
+  Abstract: "./textures/abstract.png",
 };
 
 export interface ContaminantDesign {
